@@ -32,8 +32,9 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     position:relative;
-    left: 700px;
-    display: inline-block;
+    float: right;
+    top: 40px;
+    
 }
 #content {
     background-color: white;
@@ -116,13 +117,24 @@ input[type=submit] {
 
 @media screen and (max-width:640px) {
     nav{
-        margin-left: 0px;
+        left: 0px;
         float: none;
+        text-align: center
+    }
+    form {
+        width: 95%;
+
     }
     
     h1 {
-        margin-left: 0px;
-        width: 100%
+        left: 0px;
+        float:left;
+        width: 100%;
+        text-align:center;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     #content {
@@ -130,18 +142,21 @@ input[type=submit] {
         height: auto;
 
     }
-
+    .projects {
+        width:100%
+        
+    }
   
 
 }
 @media screen and (max-width:768px){
     nav{
         margin-left: 0px;
-        float: none;
+        
     }
     
     h1 {
-        margin-left: 0px;
+        
         
     }
 
@@ -149,17 +164,22 @@ input[type=submit] {
         width: 100%;
         height: auto;
 
+    }
+
+    .projects{
+        width: 100%
     }
 
 }
 @media screen and (max-width:980px){
     nav{
-        margin-left: 0px;
-        float: none;
+        left: 0px;
+        
+        
     }
     
     h1 {
-        margin-left: 20px;
+        
         
     }
 
@@ -167,6 +187,9 @@ input[type=submit] {
         width: 100%;
         height: auto;
 
+    }
+    .projects {
+        width: 100%
     }
 
 }
